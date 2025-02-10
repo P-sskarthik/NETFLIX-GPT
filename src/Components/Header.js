@@ -33,6 +33,7 @@ const Header = () => {
       });
       return unsubscribe;
     }, [dispatch]);
+    
   return (
     <div className="absolute w-screen px-8 py-2 bg-gradient-to-b from-black z-20 flex justify-between">
       <img className="w-44"
