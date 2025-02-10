@@ -61,9 +61,9 @@ createUserWithEmailAndPassword(auth, email.current.value, password.current.value
         </h1>
         {!isSignInForm &&(<input  ref={name}  type="text" placeholder="Full Name" className="p-4 my-4 w-full bg-gray-800 rounded-lg"/>)}
             <input ref={email} type="text" placeholder="Email Address" className="p-4 my-4 w-full bg-gray-800 rounded-lg"/>
-            <input ref={password} type="text" placeholder="Password" className="p-4 my-4 w-full bg-gray-800 rounded-lg"onClick={handleButtonClick}/>
+            <input ref={password} type="password" placeholder="Password" className="p-4 my-4 w-full bg-gray-800 rounded-lg"/>
             <p className='text-red-500 '>{errorMessage}</p>
-            <button className="p-3 my-4 bg bg-red-600 w-full rounded-lg">{isSignInForm ? "Sign In" : "Sign Up"}</button>
+            <button className="p-3 my-4 bg bg-red-600 w-full rounded-lg" onClick={handleButtonClick}>{isSignInForm ? "Sign In" : "Sign Up"}</button>
             <p className="p-3" cursor-pointer onClick={toggleSignInForm}>{isSignInForm ? "New to Netflix? Sign Up Now" : "Already registered? Sign In Now."}
 
             </p>
