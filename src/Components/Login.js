@@ -3,6 +3,7 @@ import Header from './Header'
 import { checkValidData } from '../Utils/validate';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword} from "firebase/auth";
 import { auth } from "../Utils/firebase";
+import { BG_URL } from '../Utils/constant';
 
 const Login = () => {
   const [isSignInForm, setIsSignInForm] = useState(true);
@@ -51,9 +52,7 @@ createUserWithEmailAndPassword(auth, email.current.value, password.current.value
     <div>
         <Header />
         <div className='absolute'>
- <img src="https://assets.nflxext.com/ffe/siteui/vlv3/2bcf01ee-7ef6-4930-b0d5-c6863853c461/web/US-en-20241125-TRIFECTA-perspective_b55c552e-27af-438c-9052-710e645cab6c_large.jpg"
-    alt="logo"
-    />
+ <img src={BG_URL} alt="logo"/>
         </div>
         <form onSubmit={(e)=>e.preventDefault()} className='w-3/12 absolute p-12 bg-black my-36 mx-auto right-0 left-0 text-white bg-opacity-80'>
         <h1 className="font-bold text-3xl py-4">{isSignInForm ? "Sign In" : "Sign Up"}
