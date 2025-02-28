@@ -22,7 +22,7 @@ const lang = {
     tamil:{
         search: "தேடல்",
         gptSearchPlaceholder: "இன்று நீங்கள் என்ன பார்க்க விரும்புகிறீர்கள்?",
-    },
+    }
 };
 
 export default lang;
