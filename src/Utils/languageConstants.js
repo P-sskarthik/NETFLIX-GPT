@@ -3,10 +3,6 @@ const lang = {
         search: "Search",
         gptSearchPlaceholder: "What would you like to watch today?",
     },
-    hindi:{
-        search: "खोजें", 
-        gptSearchPlaceholder: "आप आज क्या देखना चाहेंगे?",
-    },
     spanish:{
         search: "Buscar",
         gptSearchPlaceholder: "¿Qué te gustaría ver hoy?",
@@ -15,14 +11,17 @@ const lang = {
         search: "検索",
         gptSearchPlaceholder: "今日は何を見たいですか？",
     },
-    telugu:{
-        search: "శోధించండి",
-        gptSearchPlaceholder: "మీరు ఈ రోజు ఏమి చూడాలనుకుంటున్నారు?",
+
+    chinese:{
+        search: "搜尋",
+        gptSearchPlaceholder: "你今天想看什麼？",
     },
-    tamil:{
-        search: "தேடல்",
-        gptSearchPlaceholder: "இன்று நீங்கள் என்ன பார்க்க விரும்புகிறீர்கள்?",
+
+    korean:{
+        search: "찾다",
+        gptSearchPlaceholder: "오늘은 무엇을 시청하고 싶으신가요?"
     }
+
 };
 
 export default lang;

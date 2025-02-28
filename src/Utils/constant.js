@@ -12,4 +12,4 @@ export const IMG_CDN_URL = "https://image.tmdb.org/t/p/w500";
 
 export const BG_URL = "https://assets.nflxext.com/ffe/siteui/vlv3/2bcf01ee-7ef6-4930-b0d5-c6863853c461/web/US-en-20241125-TRIFECTA-perspective_b55c552e-27af-438c-9052-710e645cab6c_large.jpg";
 
-export const SUPPORTED_LANGUAGES = [{identifier: "EN", name: "English"}, {identifier: "hindi", name: "Hindi"}, {identifier: "japanese", name: "Japanese"}, {identifier: "telugu", name: "Telugu"}, {identifier: "tamil", name: "Tamil"}];
+export const SUPPORTED_LANGUAGES = [{identifier: "EN", name: "English"}, {identifier: "spanish", name: "Spanish"}, {identifier: "chinese", name: "Chinese"}, {identifier: "japanese", name: "Japanese"}, {identifier: "korean", name: "Korean"}];
