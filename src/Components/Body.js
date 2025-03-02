@@ -1,11 +1,9 @@
-import React, { useEffect } from 'react';
-import { Routes, Route } from 'react-router-dom';
+
+import { Routes, Route, } from 'react-router-dom';
 import Login from './Login';
 import Browse from './Browse';
 
 const Body = () => {
-
-  
 
   return (
     <div>
@@ -16,5 +14,7 @@ const Body = () => {
     </div>
   );
 };
+
+
 
 export default Body;
