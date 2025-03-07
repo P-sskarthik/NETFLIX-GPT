@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 export const logo = "https://images.ctfassets.net/y2ske730sjqp/6bhPChRFLRxc17sR8jgKbe/6fa1c6e6f37acdc97ff635cf16ba6fb3/Logos-Readability-Netflix-logo.png";
 
 export const API_OPTIONS = {
@@ -19,4 +17,3 @@ export const SUPPORTED_LANGUAGES = [{identifier: "EN", name: "English"}, {identi
 export const OPENAI_KEY = process.env.REACT_APP_OPENAI_API_KEY;
 
 export const GPT_BG_URL = "https://preview.redd.it/2jhtmqhg4mo81.png?width=1920&format=png&auto=webp&s=0d41709c3c478d2bcadfd8f2450271f175c0676f";
->>>>>>> Stashed changes
