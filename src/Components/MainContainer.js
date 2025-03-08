@@ -3,6 +3,8 @@ import { useSelector } from "react-redux";
 import VideoTitle from "./VideoTitle";
 import VideoBackground from "./VideoBackground";
 import useMovieTrailer from "../hooks/useMovieTrailer";
+import muteIcon from '../assets/mute.png';   // Correct relative path
+import unmuteIcon from '../assets/unmute.png'; // Import unmute icon
 
 const MainContainer = () => {
   const [isMuted, setIsMuted] = useState(true); // 🔊 State to track mute/unmute
@@ -31,10 +33,15 @@ const MainContainer = () => {
 
       {/* 🎵 Toggle Sound Button */}
       <button
-  className="absolute bottom-28 right-10 bg-gray-600 text-white px-4 py-2 rounded-lg z-50"
+  className="absolute bottom-28 right-10 p-2 z-50 rounded-full bg-transparent border-2 border-gray-500 hover:bg-gray-800 hover:border-gray-400 focus:outline-none"
   onClick={() => setIsMuted(!isMuted)}
 >
-  {isMuted ? "🔇" : "🔊"}
+  <img
+    src={isMuted ? muteIcon : unmuteIcon}  // Switch between mute/unmute icons
+    alt={isMuted ? 'Muted' : 'Unmuted'}
+    width={30}  // Adjust the size of the icon
+    height={30} // Adjust the size of the icon
+  />
 </button>
     </div>
   );
