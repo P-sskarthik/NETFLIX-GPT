@@ -16,4 +16,4 @@ export const SUPPORTED_LANGUAGES = [{identifier: "EN", name: "English"}, {identi
 
 export const OPENAI_KEY = process.env.REACT_APP_OPENAI_API_KEY;
 
-export const GPT_BG_URL = "https://preview.redd.it/2jhtmqhg4mo81.png?width=1920&format=png&auto=webp&s=0d41709c3c478d2bcadfd8f2450271f175c0676f";
+export const GPT_BG_URL = "https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/08/a-tv-with-the-netflix-logo-with-a-plant-a-popcorn-bowl-and-a-remote-control-on-a-table.jpg";
