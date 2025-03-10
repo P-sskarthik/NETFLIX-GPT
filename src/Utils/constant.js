@@ -16,4 +16,4 @@ export const SUPPORTED_LANGUAGES = [{identifier: "EN", name: "English"}, {identi
 
 export const OPENAI_KEY = process.env.REACT_APP_OPENAI_API_KEY;
 
-export const GPT_BG_URL = "https://static1.howtogeekimages.com/wordpress/wp-content/uploads/2024/08/a-tv-with-the-netflix-logo-with-a-plant-a-popcorn-bowl-and-a-remote-control-on-a-table.jpg";
+export const GPT_BG_URL = "https://assets.nflxext.com/ffe/siteui/vlv3/2bcf01ee-7ef6-4930-b0d5-c6863853c461/web/US-en-20241125-TRIFECTA-perspective_b55c552e-27af-438c-9052-710e645cab6c_large.jpg";

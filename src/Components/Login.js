@@ -3,6 +3,7 @@ import Header from './Header';
 import { checkValidData } from '../Utils/validate';
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth";
 import { auth } from "../Utils/firebase";
+import { useNavigate } from 'react-router-dom';
 import { BG_URL } from '../Utils/constant';
 
 const Login = () => {
@@ -13,18 +14,22 @@ const Login = () => {
   const email = useRef(null);
   const password = useRef(null);
 
+  const navigate = useNavigate();
+
   const handleButtonClick = () => {
     const message = checkValidData(email.current.value, password.current.value);
     setErrorMessage(message);
     if (message) return;
 
     if (!isSignInForm) {
-      // Sign Up Form Logic
+      // Sign Up Logic
       createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
+        .then(() => navigate('/profiles'))  // Redirect to Profile Selection
         .catch((error) => setErrorMessage(error.message));
     } else {
       // Sign In Logic
       signInWithEmailAndPassword(auth, email.current.value, password.current.value)
+        .then(() => navigate('/profiles'))  // Redirect to Profile Selection
         .catch(() => setErrorMessage("User Not Found"));
     }
   };

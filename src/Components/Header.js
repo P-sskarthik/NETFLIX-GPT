@@ -45,10 +45,16 @@ const Header = () => {
   };
 
   return (
-    <div className="absolute w-full px-4 py-2 bg-gradient-to-b from-black z-20 flex flex-col md:flex-row justify-between items-center">
+    <div className="absolute w-full min-h-[10vh] p-4 bg-gradient-to-b from-black to-transparent z-20 flex flex-col md:flex-row justify-between items-center">
+
+      {/* Netflix Logo */}
       <img className="w-28 md:w-40 mx-auto md:mx-0" src={logo} alt="logo" />
-      {user && ( // Render only if user is signed in
+
+      {/* User Section - Only Show if User is Logged In */}
+      {user && (
         <div className="flex flex-wrap items-center justify-center md:justify-end space-x-4 mt-2 md:mt-0">
+          
+          {/* Language Selector (Only visible when GPT Search is active) */}
           {showGptSearch && (
             <select 
               className="h-10 px-4 bg-gray-800 text-white rounded-lg text-sm md:text-base"
@@ -59,12 +65,18 @@ const Header = () => {
               ))}
             </select>
           )}
+
+          {/* GPT Search Toggle Button */}
           <button className="h-10 px-4 bg-purple-800 text-white rounded-lg text-sm md:text-base" onClick={handleGptSearchClick}>
             {showGptSearch ? "Homepage" : "GPT Search"}
           </button>
+
+          {/* User Profile Icon */}
           <img className="w-8 h-8 md:w-10 md:h-10 rounded-lg" alt="usericon" 
             src="https://occ-0-33-37.1.nflxso.net/dnm/api/v6/vN7bi_My87NPKvsBoib006Llxzg/AAAABXz4LMjJFidX8MxhZ6qro8PBTjmHbxlaLAbk45W1DXbKsAIOwyHQPiMAuUnF1G24CLi7InJHK4Ge4jkXul1xIW49Dr5S7fc.png?r=e6e" 
           />
+
+          {/* Sign Out Button */}
           <button onClick={handleSignOut} className="font-bold text-white text-sm md:text-base">(Sign Out)</button>
         </div>
       )}
