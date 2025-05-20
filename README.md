@@ -1,70 +1,70 @@
-Netflix-Clone
+Netflix-GPT 🎬🤖
+AI-Powered Movie & TV Show Recommendation App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Overview
+Netflix-GPT is a responsive, AI-driven movie and TV show recommendation app built with React and Redux. It enhances user experience by integrating OpenAI's GPT API for personalized content suggestions and Firebase Authentication for secure user management. Real-time movie and show data is fetched from the TMDB API to provide a dynamic and intuitive interface.
 
-## Available Scripts
+🚀 Features
+🎯 GPT-Powered Recommendations – Personalized suggestions using natural language queries via OpenAI API
 
-In the project directory, you can run:
+🔍 Smart Search – Natural language search bar with GPT integration
 
-### `npm start`
+🔐 Authentication – Firebase-based login system with persistent user sessions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+📡 Real-Time Content – Fetches trending movies and shows from the TMDB API
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+⚛️ Modern Frontend Stack – Built with React, Redux, and Tailwind CSS for a responsive and performant UI
 
-### `npm test`
+🔄 Async Data Handling – Robust API handling and loading states using async/await
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+📱 Mobile Responsive – Fully responsive layout optimized for various screen sizes
 
-### `npm run build`
+🛠 Tech Stack
+Frontend: React, Redux, Tailwind CSS
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+AI Integration: OpenAI GPT API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Authentication: Firebase Auth
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Data Source: The Movie Database (TMDB) API
 
-### `npm run eject`
+State Management: Redux Toolkit
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Deployment Ready: Easily deployable build with npm run build
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🧠 Learnings & Focus
+This project demonstrates skills in:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Natural Language Processing (NLP) integration using OpenAI
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Real-time data fetching and dynamic UI rendering
 
-## Learn More
+Secure authentication flow using Firebase
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+State management with Redux Toolkit
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Responsive and accessible UI design
 
-### Code Splitting
+🧪 Available Scripts
+In the project directory, run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+npm start
+Runs the app in development mode at http://localhost:3000
 
-### Analyzing the Bundle Size
+npm run build
+Builds the app for production with optimized performance
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+📦 Setup Instructions
+Clone the repository
 
-### Making a Progressive Web App
+Run npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Add your .env with the following:
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ini
+Copy
+Edit
+REACT_APP_OPENAI_API_KEY=your_openai_key
+REACT_APP_TMDB_TOKEN=your_tmdb_token
+REACT_APP_FIREBASE_CONFIG=your_firebase_config_object
+Run npm start and explore!
