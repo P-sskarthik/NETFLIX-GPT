@@ -1,70 +1,114 @@
-Netflix-Clone
+Netflix-GPT 🎬🤖
+AI-Powered Movie & TV Show Recommendation App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📖 Overview
+Netflix-GPT is a responsive, AI-driven movie and TV show recommendation app built with React and Redux. It enhances user experience by integrating OpenAI's GPT API for personalized content suggestions and Firebase Authentication for secure user management. Real-time data is fetched from the TMDB API to deliver a dynamic and intuitive interface.
 
-## Available Scripts
+🚀 Features
+🎯 GPT-Powered Recommendations – Personalized suggestions using natural language queries via OpenAI API
 
+🔍 Smart Search – Natural language search bar powered by GPT
+
+🔐 Authentication – Firebase login system with persistent sessions
+
+📡 Real-Time Content – Fetches trending movies and shows from TMDB API
+
+⚛️ Modern Frontend Stack – Built with React, Redux, and Tailwind CSS
+
+🔄 Async Data Handling – Efficient API handling using async/await
+
+📱 Mobile Responsive – Optimized layout for all screen sizes
+
+🛠 Tech Stack
+Area	Technology
+Frontend	React, Redux, Tailwind CSS
+AI Integration	OpenAI GPT API
+Authentication	Firebase Auth
+Data Source	The Movie Database (TMDB) API
+State Management	Redux Toolkit
+Deployment	Vercel / Netlify Ready
+
+🧠 Learnings & Focus
+This project demonstrates skills in:
+
+🧠 Natural Language Processing (NLP) with OpenAI
+
+🔄 Real-time data fetching and async UI rendering
+
+🔐 Secure authentication flow using Firebase
+
+⚛️ State management using Redux Toolkit
+
+💡 Responsive and accessible UI design
+
+🧪 Available Scripts
 In the project directory, you can run:
 
-### `npm start`
+bash
+Copy
+Edit
+npm start
+Runs the app in development mode. Open http://localhost:3000 in your browser.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+bash
+Copy
+Edit
+npm run build
+Builds the app for production with optimized performance.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+📦 Setup Instructions
+Clone the repository:
 
-### `npm test`
+bash
+Copy
+Edit
+git clone https://github.com/your-username/netflix-gpt.git
+cd netflix-gpt
+Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+bash
+Copy
+Edit
+npm install
+Add a .env file in the root with the following variables:
 
-### `npm run build`
+env
+Copy
+Edit
+REACT_APP_OPENAI_API_KEY=your_openai_key
+REACT_APP_TMDB_TOKEN=your_tmdb_token
+REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+REACT_APP_FIREBASE_AUTH_DOMAIN=your_project.firebaseapp.com
+REACT_APP_FIREBASE_PROJECT_ID=your_project_id
+REACT_APP_FIREBASE_STORAGE_BUCKET=your_project.appspot.com
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_sender_id
+REACT_APP_FIREBASE_APP_ID=your_app_id
+Run the app:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy
+Edit
+npm start
+🌐 Deployment
+You can deploy this app on Vercel or Netlify:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+▶️ Vercel
+Push your project to GitHub
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Go to vercel.com, import your repo
 
-### `npm run eject`
+Add .env variables in Project Settings
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Click Deploy
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+▶️ Netlify
+Push your code to GitHub
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Go to netlify.com, import your repo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Add environment variables under Site Settings → Environment
 
-## Learn More
+Click Deploy site
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+e_config_object
+Run npm start and explore!
