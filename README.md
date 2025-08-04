@@ -111,4 +111,4 @@ Add environment variables under Site Settings → Environment
 Click Deploy site
 
 e_config_object
-Run npm start and explore!
+start and explore!
